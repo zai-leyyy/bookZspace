@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+body{
+
+    font-family:Georgia, serif;
+    background:#EFE7DC;
+    margin:0;
+    overflow-x:hidden;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: #6e4f3a;
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+/* MENU CONTAINER */
+
+.menu-container {
+    position: relative;
+}
+
+
+/* MENU BUTTON */
+
+.menu-button {
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    padding: 5px 8px;
+
+    transition: 0.3s;
+}
+
+.menu-button:hover {
+    opacity: 0.6;
+}
+
+
+/* DROPDOWN MENU */
+
+.menu-dropdown {
+    display: none;
+
+    position: absolute;
+
+    top: 45px;
+    right: 0;
+
+    width: 180px;
+
+    background-color: #F6F1E8;
+
+    border-radius: 5px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    overflow: hidden;
+
+    z-index: 1000;
+}
+
+
+/* DROPDOWN LINKS */
+
+.menu-dropdown a {
+    display: block;
+
+    padding: 14px 18px;
+
+    color: #6E4F3A;
+
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+}
+
+
+/* HOVER EFFECT */
+
+.menu-dropdown a:hover {
+     background-color: #E8D7C3;
+}
+
+
+/* SHOW DROPDOWN */
+
+.menu-dropdown.show {
+    display: block;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.section-heading span {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #a67843;
+    font-weight: 600;
+}
+
+
+.section-heading h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+
+.section-heading p {
+    max-width: 550px;
+    margin: auto;
+    line-height: 1.7;
+    color: #765c48;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1.25fr 1fr 1fr;
+
+    grid-template-rows: 1fr 1fr;
+
+    gap: 16px;
+
+    min-height: 550px;
+}
+
+
+/* =========================
+   BIG IMAGE CARD
+========================= */
+
+.main-card {
+    grid-row: span 2;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    min-height: 550px;
+
+    background: #ddd;
+}
+
+
+.main-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* Dark gradient */
+
+.main-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(40, 24, 13, 0.85),
+            rgba(40, 24, 13, 0.05) 65%
+        );
+}
+
+
+/* Image hover */
+
+.main-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================
+   IMAGE TEXT
+========================= */
+
+.main-overlay {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+
+    color: white;
+}
+
+
+.small-label {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border: 1px solid rgba(255,255,255,0.7);
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 18px;
+}
+
+
+.main-overlay h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    line-height: 1.15;
+
+    margin-bottom: 12px;
+}
+
+
+.main-overlay p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    max-width: 420px;
+
+    color: rgba(255,255,255,0.85);
+}
+
+
+/* =========================
+   SMALL CARDS
+========================= */
+
+.info-card {
+    position: relative;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background: #fffdf8;
+
+    border: 1px solid #e8dccb;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* Hover */
+
+.info-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(67, 42, 21, 0.12);
+}
+
+
+/* =========================
+   CARD COLORS
+========================= */
+
+.info-card.green {
+    background: #ead9c3;
+    border: none;
+}
+
+
+.info-card.brown {
+    background: #ead9c3;
+    border: none;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.icon {
+    position: absolute;
+
+    top: 25px;
+    left: 28px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #4a321f;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.info-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.info-card p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #6e5947;
+}
+
+
+.info-card.green p,
+.info-card.brown p {
+    color: #57432f;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows:
+            500px
+            auto
+            auto;
+
+    }
+
+    .main-card {
+        grid-column: span 2;
+
+        grid-row: auto;
+
+        min-height: 500px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-section {
+        width: 92%;
+
+        margin: 50px auto;
+    }
+
+
+    .section-heading h1 {
+        font-size: 38px;
+    }
+
+
+    .about-grid {
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    .main-card {
+        min-height: 480px;
+    }
+
+
+    .info-card {
+        min-height: 220px;
+    }
+
+}
+
+/* FOOTER */
+
+.footer {
+    background: #6e4f3a;
+    color: white;
+    font-family: Georgia, sans-serif;
+    padding-top: 20px;
+}
+
+/* Main Footer Content */
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Brand */
+
+.footer-brand h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #F5EFE6;
+    padding-top: 20px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #FAF3E8;
+    padding-top: 20px;
+}
+
+.footer-brand .listen {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+
+/* Columns */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.footer-column a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #FAF3E8;
+    transform: translateX(4px);
+}
+
+
+/* Bottom */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 50px;
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #cccccc;
+}
+
+.footer-policy {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-policy a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-policy a:hover {
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .footer {
+        padding: 50px 25px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+
+table, th, td {
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid;
+    padding-bottom: 15px;
+}
+
+th {
+    background-color: #ead9c3;
+    font-weight: bold;
+    color: #6e4f3a;
+}
+
+th, td {
+    padding: 15px;
+}
+
+td {
+    color: #6e4f3a;
+}

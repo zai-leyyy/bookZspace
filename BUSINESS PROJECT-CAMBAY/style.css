@@ -1,0 +1,1417 @@
+.video-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 15px;
+    background: #F6F1E8;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #6E4F3A;
+}
+.video-container {
+    transition: 0.3s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.top {
+    height: 50vh;
+    background-color: #EFE7DC;
+    text-align: center;
+}
+
+.bottom {
+    min-height: 50vh;
+    background-color: #6e4f3a;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #6e4f3a;
+    color: white;
+    font-family: Georgia, sans-serif;
+}
+
+/* Main Footer Content */
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Brand */
+
+.footer-brand h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #F5EFE6;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #FAF3E8;
+}
+
+.footer-brand .listen {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+
+/* Columns */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.footer-column a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #FAF3E8;
+    transform: translateX(4px);
+}
+
+
+/* Bottom */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 50px;
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #cccccc;
+}
+
+.footer-policy {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-policy a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-policy a:hover {
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .footer {
+        padding: 50px 25px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+body{
+
+    font-family:Georgia, serif;
+    background:#EFE7DC;
+    margin:0;
+    overflow-x:hidden;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: #6e4f3a;
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+/* MENU CONTAINER */
+
+.menu-container {
+    position: relative;
+}
+
+
+/* MENU BUTTON */
+
+.menu-button {
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    padding: 5px 8px;
+
+    transition: 0.3s;
+}
+
+.menu-button:hover {
+    opacity: 0.6;
+}
+
+
+/* DROPDOWN MENU */
+
+.menu-dropdown {
+    display: none;
+
+    position: absolute;
+
+    top: 45px;
+    right: 0;
+
+    width: 180px;
+
+    background-color: #F6F1E8;
+
+    border-radius: 5px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    overflow: hidden;
+
+    z-index: 1000;
+}
+
+
+/* DROPDOWN LINKS */
+
+.menu-dropdown a {
+    display: block;
+
+    padding: 14px 18px;
+
+    color: #6E4F3A;
+
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+}
+
+
+/* HOVER EFFECT */
+
+.menu-dropdown a:hover {
+     background-color: #E8D7C3;
+}
+
+
+/* SHOW DROPDOWN */
+
+.menu-dropdown.show {
+    display: block;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    text-align: center;
+
+    padding: 70px 20px 50px;
+}
+
+.subtitle {
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.6;
+
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+
+    font-size: 55px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+.hero > p:not(.subtitle) {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+    opacity: 0.7;
+}
+
+
+/* =========================
+   BUILD BUTTON
+========================= */
+
+#buildButton {
+
+    margin-top: 30px;
+
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #6e4f3a;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 15px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+#buildButton:hover {
+
+    transform: translateY(-3px);
+
+    background: #4d3628;
+
+    box-shadow:
+        0 12px 20px rgba(0,0,0,0.2);
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+
+    max-width: 1200px;
+
+    margin: 30px auto 100px;
+
+    padding: 0 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 40px;
+
+    position: center;
+}
+
+
+/* =========================
+   PUZZLE CARD
+========================= */
+
+.puzzle-card {
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.5);
+
+    box-shadow:
+        0 10px 30px rgba(63,48,40,0.08);
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.puzzle-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 35px rgba(63,48,40,0.15);
+
+    position: relative;    
+}
+
+
+/* =========================
+   PUZZLE AREA
+========================= */
+
+.puzzle {
+
+    width: 220px;
+
+    height: 300px;
+
+    margin: auto;
+
+    position: relative;
+
+    perspective: 1000px;
+}
+
+
+/* =========================
+   PUZZLE PIECES
+========================= */
+
+.piece {
+
+    position: absolute;
+
+    width: 110px;
+
+    height: 150px;
+
+    overflow: hidden;
+
+    transition:
+        transform 1.2s cubic-bezier(.2,.8,.2,1),
+        opacity 0.8s ease;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.2);
+
+    z-index: 2;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+.piece img {
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 300px;
+
+    max-width: none;
+
+    object-fit: cover;
+}
+
+
+/* TOP LEFT */
+
+.piece1 {
+
+    top: 0;
+
+    left: 0;
+
+    border-radius:
+        8px 0 0 0;
+}
+
+.piece1 img {
+
+    top: 0;
+
+    left: 0;
+}
+
+
+/* TOP RIGHT */
+
+.piece2 {
+
+    top: 0;
+
+    right: 0;
+
+    border-radius:
+        0 8px 0 0;
+}
+
+.piece2 img {
+
+    top: 0;
+
+    right: 0;
+}
+
+
+/* BOTTOM LEFT */
+
+.piece3 {
+
+    bottom: 0;
+
+    left: 0;
+
+    border-radius:
+        0 0 0 8px;
+}
+
+.piece3 img {
+
+    bottom: 0;
+
+    left: 0;
+}
+
+
+/* BOTTOM RIGHT */
+
+.piece4 {
+
+    bottom: 0;
+
+    right: 0;
+
+    border-radius:
+        0 0 8px 0;
+}
+
+.piece4 img {
+
+    bottom: 0;
+
+    right: 0;
+}
+
+
+/* =========================
+   SCATTERED PUZZLE
+========================= */
+
+.piece1 {
+
+    transform:
+        translate(-45px, -35px)
+        rotate(-12deg);
+}
+
+.piece2 {
+
+    transform:
+        translate(45px, -35px)
+        rotate(12deg);
+}
+
+.piece3 {
+
+    transform:
+        translate(-45px, 35px)
+        rotate(12deg);
+}
+
+.piece4 {
+
+    transform:
+        translate(45px, 35px)
+        rotate(-12deg);
+}
+
+
+/* =========================
+   BUILT STATE
+========================= */
+
+.puzzle-card.built .piece {
+
+    transform:
+        translate(0, 0)
+        rotate(0deg);
+
+    box-shadow: none;
+}
+
+
+/* =========================
+   PUZZLE LINES
+========================= */
+
+.puzzle-card.built .piece::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   BOOK INFORMATION
+========================= */
+
+.book-info {
+
+    margin-top: 25px;
+}
+
+.book-info h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 7px;
+}
+
+.book-info p {
+
+    font-size: 14px;
+
+    opacity: 0.6;
+
+    margin-bottom: 15px;
+}
+
+.book-info button {
+
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #6e4f3a;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition: 0.3s;
+}
+
+.book-info button:hover {
+
+    background: #3f3028;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   POPUP
+========================= */
+
+.popup {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(30,20,15,0.75);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.4s;
+
+    z-index: 100;
+}
+
+.popup.active {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+.popup-content {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 45px;
+
+    background: #f6f1e8;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    position: relative;
+
+    transform:
+        scale(0.😎
+        translateY(30px);
+
+    transition: 0.4s;
+}
+
+.popup.active .popup-content {
+
+    transform:
+        scale(1)
+        translateY(0);
+}
+
+.popup-content > span {
+
+    font-size: 35px;
+}
+
+.popup-content h2 {
+
+    margin: 15px 0 5px;
+
+    font-size: 32px;
+}
+
+.popup-content > p {
+
+    opacity: 0.7;
+}
+
+.description {
+
+    margin: 25px 0;
+
+    line-height: 1.6;
+}
+
+
+/* CLOSE */
+
+.close {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #3f3028;
+
+    transition: 0.3s;
+}
+
+.close:hover {
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .gallery {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    nav {
+
+        padding: 0 20px;
+    }
+
+    .nav-links {
+
+        gap: 10px;
+    }
+
+    .nav-links a {
+
+        font-size: 12px;
+    }
+
+    .hero h2 {
+
+        font-size: 40px;
+    }
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+body{
+
+    font-family:Georgia, serif;
+    background:#EFE7DC;
+    margin:0;
+    overflow-x:hidden;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: #6e4f3a;
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.small-title {
+    letter-spacing: 5px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.hero h1 {
+    font-size: 55px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 17px;
+    opacity: 0.7;
+}
+
+
+/* =========================
+   BOOK CAROUSEL
+========================= */
+
+.book-section {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    padding: 40px 0;
+}
+
+.book-carousel {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    width: 100%;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding: 30px 10%;
+
+    scrollbar-width: none;
+}
+
+.book-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   BOOK CARD
+========================= */
+
+.book-card {
+    flex: 0 0 230px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease,
+        filter 0.4s ease;
+}
+
+.book-card img {
+    width: 230px;
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.2);
+
+    display: block;
+}
+
+
+/* BOOK INFORMATION */
+
+.book-info {
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.book-info h2 {
+    font-size: 19px;
+}
+
+.book-info p {
+    font-size: 13px;
+    opacity: 0.6;
+
+    margin-top: 5px;
+}
+
+.book-info span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.book-card:hover {
+    transform: translateY(-15px) scale(1.04);
+}
+
+.book-card:hover img {
+    box-shadow:
+        0 25px 45px rgba(0,0,0,0.3);
+}
+
+
+/* =========================
+   ARROW BUTTONS
+========================= */
+
+.arrow {
+    position: absolute;
+
+    z-index: 10;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #6e4f3a;
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+
+.left {
+    left: 30px;
+}
+
+.right {
+    right: 30px;
+}
+
+
+/* =========================
+   SELECTED BOOK
+========================= */
+
+.details {
+    text-align: center;
+
+    padding: 60px 20px 100px;
+}
+
+.details-label {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.5;
+
+    margin-bottom: 10px;
+}
+
+.details h2 {
+    font-size: 35px;
+
+    margin-bottom: 8px;
+}
+
+.details p {
+    margin-bottom: 8px;
+}
+
+#bookPrice {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.shop-btn {
+    margin-top: 20px;
+
+    padding: 14px 35px;
+
+    border: none;
+
+    background: #6e4f3a;
+    color: white;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #3e2b20;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .book-carousel {
+        gap: 20px;
+        padding: 30px 15%;
+    }
+
+    .book-card {
+        flex-basis: 200px;
+    }
+
+    .book-card img {
+        width: 200px;
+        height: 290px;
+    }
+
+    .left {
+        left: 10px;
+    }
+
+    .right {
+        right: 10px;
+    }
+
+    .details h2 {
+        font-size: 27px;
+    }
+}
+
+body{
+
+    font-family:Georgia, serif;
+    background:#EFE7DC;
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: #6e4f3a;
+    color: white;
+}
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    margin: o;
+    padding: 0;
+
+}
+
+nav {
+        padding: 0 5%;
+}
+
+.nav-links {
+        display: none;
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+body{
+
+    font-family:Georgia, serif;
+    background:#EFE7DC;
+    margin:0;
+    overflow-x:hidden;
+}
+
+img{
+
+    margin-top:10px;
+
+}
+
+p{
+
+    width:80%;
+    margin:auto;
+    line-height:30px;
+
+}
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.slider{
+
+    max-width:1100px;
+
+    margin:50px auto;
+
+    position:relative;
+
+}
+
+.slides{
+
+    display:none;
+
+}
+
+.slides img{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+/* Previous */
+
+.prev,.next{
+
+    cursor:pointer;
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:white;
+
+    font-size:35px;
+
+    padding:15px;
+
+    font-weight:bold;
+
+    user-select:none;
+
+    background:rgba(0,0,0,.3);
+
+}
+
+.prev{
+
+    left:10px;
+
+    border-radius:50%;
+
+}
+
+.next{
+
+    right:10px;
+
+    border-radius:50%;
+
+}
+
+.prev:hover,
+.next:hover{
+
+    background:#2e7d32;
+
+}
+
+/* Dots */
+
+.dots{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.dot{
+
+    cursor:pointer;
+
+    height:15px;
+
+    width:15px;
+
+    margin:0 5px;
+
+    background:#bbb;
+
+    display:inline-block;
+
+    border-radius:50%;
+
+    transition:.3s;
+
+}
+
+.active,
+.dot:hover{
+
+    background:#2e7d32;
+
+}
+
+/* Fade Animation */
+
+.fade{
+
+    animation:fade 1s;
+
+}
+
+@keyframes fade{
+
+    from{
+        opacity:.4;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}

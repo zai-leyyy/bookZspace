@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookZzz Space | Book Products</title>
+
+    <link rel="stylesheet" href="customstyle.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+    <nav>
+        <div class="logo">BookZzz Space</div>
+
+        <div class="nav-links">
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20index.html" target="_blank">Home</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20products.html" target="_blank">Products</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20gallery.html" target="_blank">Gallery</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20about.html" target="_blank">About</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20contact.html" target="_blank">Contact</a>
+        </div>
+
+ <!-- MENU BUTTON -->
+        <div class="menu-container">
+
+            <button class="menu-button" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <div class="menu-dropdown" id="menuDropdown">
+
+                <a href="login.html">Log In</a>
+                <a href="signup.html">Create Account</a>
+                
+            </div>
+
+        </div>
+        
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <p class="small-title">WELCOME TO</p>
+
+        <h1 style="color: #8A7246;">THE BOOK REEL</h1>
+
+        <p class="subtitle">
+            Discover your next favorite story.
+        </p>
+
+    </section>
+
+
+    <!-- BOOK CAROUSEL -->
+    <section class="book-section">
+
+        <button class="arrow left" id="prevBtn">
+            &#10094;
+        </button>
+
+        <div class="book-carousel" id="carousel">
+
+            <!-- BOOK 1 -->
+            <div class="book-card">
+                <img src="pictures/achillesbook.jpg"
+                     alt="achillesbook">
+
+                <div class="book-info">
+                    <h2>The Song of Achilles</h2>
+                    <p>MAdeline Miller</p>
+                    <span>Php 529.00</span>
+                </div>
+            </div>
+
+
+            <!-- BOOK 2 -->
+            <div class="book-card">
+                <img src="pictures/twilightbook.jpg"
+                     alt="twilightbook">
+
+                <div class="book-info">
+                    <h2>Twilight</h2>
+                    <p>Stephenie Meyer</p>
+                    <span>Php 495.00</span>
+                </div>
+            </div>
+
+
+            <!-- BOOK 3 -->
+            <div class="book-card">
+                <img src="pictures/pjobook.jpg"
+                     alt="pjobook">
+
+                <div class="book-info">
+                    <h2>Percy Jackson and the Olympians</h2>
+                    <p>Rick Riordan</p>
+                    <span>Php 535.00</span>
+                </div>
+            </div>
+
+
+            <!-- BOOK 4 -->
+            <div class="book-card">
+                <img src="pictures/btrbook.jpg"
+                     alt="btrbook">
+
+                <div class="book-info">
+                    <h2>Between The Rainbow</h2>
+                    <p>Ineryss</p>
+                    <span>Php 499.00</span>
+                </div>
+            </div>
+
+
+            <!-- BOOK 5 -->
+            <div class="book-card">
+                <img src="pictures/overthehorizon.jpg"
+                     alt="overthehorizon">
+
+                <div class="book-info">
+                    <h2>Over The Horizon</h2>
+                    <p>Ineryss</p>
+                    <span>Php 469.00</span>
+                </div>
+            </div>
+
+            <!-- BOOK 6 -->
+            <div class="book-card">
+                <img src="pictures/btbsbook.jpg"
+                     alt="btbsbook">
+
+                <div class="book-info">
+                    <h2>Behind The Blue Skies</h2>
+                    <p>Ineryss</p>
+                    <span>Php 485.00</span>
+                </div>
+            </div>
+
+            <!-- BOOK 7 -->
+            <div class="book-card">
+                <img src="pictures/chasingthesun.jpg"
+                     alt="chasingthesun">
+
+                <div class="book-info">
+                    <h2>Chasing The Sun</h2>
+                    <p>Inksteady</p>
+                    <span>Php 339.00</span>
+                </div>
+            </div>
+
+            <!-- BOOK 8 -->
+            <div class="book-card">
+                <img src="pictures/tamingthewaves.jpg"
+                     alt="tamingthewaves">
+
+                <div class="book-info">
+                    <h2>Taming The Waves</h2>
+                    <p>Inksteady</p>
+                    <span>Php 355.00</span>
+                </div>
+            </div>
+
+            <!-- BOOK 9 -->
+            <div class="book-card">
+                <img src="pictures/lovingthesky.jpg"
+                     alt="lovingthesky">
+
+                <div class="book-info">
+                    <h2>Loving The Sky</h2>
+                    <p>Inksteady</p>
+                    <span>Php 349.00</span>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="arrow right" id="nextBtn">
+            &#10095;
+        </button>
+
+    </section>
+
+
+    <!-- PRODUCT DETAILS -->
+
+    <section class="details" id="details">
+
+        <p class="details-label">SELECTED BOOK</p>
+
+        <h2 id="bookTitle">
+            The Song of Achilles
+        </h2>
+
+        <p id="bookAuthor">
+            Madeline Miller
+        </p>
+
+        <p id="bookPrice">
+            Php 529.00
+        </p>
+
+        <button class="shop-btn">
+            ADD TO CART
+        </button>
+
+    </section>
+
+
+    <script src="java.js"></script>
+
+<footer class="footer">
+
+    <!-- Top Footer -->
+    <div class="footer-content">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <h2>BOOKZZZ SPACE</h2>
+
+            <p>
+                Books and stories<br>
+                That makes you feel you.
+            </p>
+
+            <p class="listen">
+                Visit @bookzzzspace.channel
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20index.html">Home</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20products.html">Products</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20gallery.html">Gallery</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20about.html">About Us</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20contact.html">Contacts</a>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-column">
+            <h3>Stay In Touch</h3>
+
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Tiktok</a>
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+
+        <p>
+            Copyright © 2026 BOOKZZZ SPACE. All rights reserved.
+        </p>
+
+        <div class="footer-policy">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

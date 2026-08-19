@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZzz Space | Book Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:#EFE7DC;">
+
+<!-- NAVIGATION -->
+    <nav>
+        <div class="logo">BookZzz Space</div>
+
+        <div class="nav-links">
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20index.html" target="_blank">Home</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20products.html" target="_blank">Products</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20gallery.html" target="_blank">Gallery</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20about.html" target="_blank">About</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20contact.html" target="_blank">Contact</a>
+        </div>
+
+ <!-- MENU BUTTON -->
+        <div class="menu-container">
+
+            <button class="menu-button" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <div class="menu-dropdown" id="menuDropdown">
+
+                <a href="login.html">Log In</a>
+                <a href="signup.html">Create Account</a>
+                
+            </div>
+
+        </div>
+        
+    </nav>
+
+<section class="top">
+
+<!-- HERO -->
+<center>
+    <section class="hero">
+
+        <p class="subtitle">BOOK PUZZLE COLLECTION</p>
+
+        <h2>Build the Story</h2>
+
+        <p>
+            Every story begins with a few scattered pieces.
+            Put them together and discover the book.
+        </p>
+
+        <button id="buildButton" onclick="buildStories()">
+            🧩 Build the Story
+        </button>
+
+    </section>
+</center>
+
+    <!-- PUZZLE GALLERY -->
+
+    <section class="gallery">
+
+
+        <!-- BOOK 1 -->
+
+        <div class="puzzle-card">
+
+            <div class="puzzle">
+
+                <div class="piece piece1">
+                    <img src="pictures/achillesbook.jpg" alt="achillesbook">
+                </div>
+
+                <div class="piece piece2">
+                    <img src="pictures/achillesbook.jpg" alt="achillesbook">
+                </div>
+
+                <div class="piece piece3">
+                    <img src="pictures/achillesbook.jpg" alt="achillesbook">
+                </div>
+
+                <div class="piece piece4">
+                    <img src="pictures/achillesbook.jpg" alt="achillesbook">
+                </div>
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>The Song of Achilles</h3>
+
+                <p>Madeline Miller</p>
+
+                <button onclick="showBook(
+                    'The Song of Achilles',
+                    'Madeline Miller'
+                )">
+                    View Book
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 2 -->
+
+        <div class="puzzle-card">
+
+            <div class="puzzle">
+
+                <div class="piece piece1">
+                    <img src="pictures/twilightbook.jpg" alt="twilightbook">
+                </div>
+
+                <div class="piece piece2">
+                    <img src="pictures/twilightbook.jpg" alt="twilightbook">
+                </div>
+
+                <div class="piece piece3">
+                    <img src="pictures/twilightbook.jpg" alt="twilightbook">
+                </div>
+
+                <div class="piece piece4">
+                    <img src="pictures/twilightbook.jpg" alt="twilightbook">
+                </div>
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>Twilight</h3>
+
+                <p>Stephenie Meyer</p>
+
+                <button onclick="showBook(
+                    'Twilight',
+                    'Stephenie Meyer'
+                )">
+                    View Book
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 3 -->
+
+        <div class="puzzle-card">
+
+            <div class="puzzle">
+
+                <div class="piece piece1">
+                    <img src="pictures/pjobook.jpg" alt="pjobook">
+                </div>
+
+                <div class="piece piece2">
+                    <img src="pictures/pjobook.jpg" alt="pjobook">
+                </div>
+
+                <div class="piece piece3">
+                    <img src="pictures/pjobook.jpg" alt="pjobook">
+                </div>
+
+                <div class="piece piece4">
+                    <img src="pictures/pjobook.jpg" alt="pjobook">
+                </div>
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>Percy Jackson and the Olympians</h3>
+
+                <p>Rick Riordan</p>
+
+                <button onclick="showBook(
+                    'Percy Jackson and the Olympians',
+                    'Rick Riordan'
+                )">
+                    View Book
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- BOOK 4 -->
+
+        <div class="puzzle-card">
+
+            <div class="puzzle">
+
+                <div class="piece piece1">
+                    <img src="pictures/btrbook.jpg" alt="btrbook">
+                </div>
+
+                <div class="piece piece2">
+                    <img src="pictures/btrbook.jpg" alt="btrbook">
+                </div>
+
+                <div class="piece piece3">
+                    <img src="pictures/btrbook.jpg" alt="btrbook">
+                </div>
+
+                <div class="piece piece4">
+                    <img src="pictures/btrbook.jpg" alt="btrbook">
+                </div>
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>Between The Rainbow</h3>
+
+                <p>Ineryss</p>
+
+                <button onclick="showBook(
+                    'Between The Rainbow',
+                    'Ineryss'
+                )">
+                    View Book
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- BOOK 5 -->
+
+        <div class="puzzle-card">
+
+            <div class="puzzle">
+
+                <div class="piece piece1">
+                    <img src="pictures/overthehorizon.jpg" alt="overthehorizon">
+                </div>
+
+                <div class="piece piece2">
+                    <img src="pictures/overthehorizon.jpg" alt="overthehorizon">
+                </div>
+
+                <div class="piece piece3">
+                    <img src="pictures/overthehorizon.jpg" alt="overthehorizon">
+                </div>
+
+                <div class="piece piece4">
+                    <img src="pictures/overthehorizon.jpg" alt="overthehorizon">
+                </div>
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>Over The Horizon</h3>
+
+                <p>Ineryss</p>
+
+                <button onclick="showBook(
+                    'Over The Horizon',
+                    'Ineryss'
+                )">
+                    View Book
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- BOOK 6 -->
+
+        <div class="puzzle-card">
+
+            <div class="puzzle">
+
+                <div class="piece piece1">
+                    <img src="pictures/btbsbook.jpg" alt="btbsbook">
+                </div>
+
+                <div class="piece piece2">
+                    <img src="pictures/btbsbook.jpg" alt="btbsbook">
+                </div>
+
+                <div class="piece piece3">
+                    <img src="pictures/btbsbook.jpg" alt="btbsbook">
+                </div>
+
+                <div class="piece piece4">
+                    <img src="pictures/btbsbook.jpg" alt="btbsbook">
+                </div>
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>Behind The Blue Skies</h3>
+
+                <p>Ineryss</p>
+
+                <button onclick="showBook(
+                    'Behind The Blue Skies',
+                    'Ineryss'
+                )">
+                    View Book
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- BOOK 7 -->
+
+        <div class="puzzle-card">
+
+            <div class="puzzle">
+
+                <div class="piece piece1">
+                    <img src="pictures/chasingthesun.jpg" alt="chasingthesun">
+                </div>
+
+                <div class="piece piece2">
+                    <img src="pictures/chasingthesun.jpg" alt="chasingthesun">
+                </div>
+
+                <div class="piece piece3">
+                    <img src="pictures/chasingthesun.jpg" alt="chasingthesun">
+                </div>
+
+                <div class="piece piece4">
+                    <img src="pictures/chasingthesun.jpg" alt="chasingthesun">
+                </div>
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>Chasing The Sun</h3>
+
+                <p>Inksteady</p>
+
+                <button onclick="showBook(
+                    'Chasing The Sun',
+                    'Inksteady'
+                )">
+                    View Book
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- BOOK 8 -->
+
+        <div class="puzzle-card">
+
+            <div class="puzzle">
+
+                <div class="piece piece1">
+                    <img src="pictures/tamingthewaves.jpg" alt="tamingthewaves">
+                </div>
+
+                <div class="piece piece2">
+                    <img src="pictures/tamingthewaves.jpg" alt="tamingthewaves">
+                </div>
+
+                <div class="piece piece3">
+                    <img src="pictures/tamingthewaves.jpg" alt="tamingthewaves">
+                </div>
+
+                <div class="piece piece4">
+                    <img src="pictures/tamingthewaves.jpg" alt="tamingthewaves">
+                </div>
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>Taming The Waves</h3>
+
+                <p>Inksteady</p>
+
+                <button onclick="showBook(
+                    'Taming The Waves',
+                    'Inksteady'
+                )">
+                    View Book
+                </button>
+
+            </div>
+
+        </div>
+</section>
+    <!-- POPUP -->
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <button class="close" onclick="closePopup()">×</button>
+
+            <span>📖</span>
+
+            <h2 id="popupTitle"></h2>
+
+            <p id="popupAuthor"></p>
+
+            <p class="description">
+                A story is made from many pieces.
+                Discover what lies between the pages.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="scriptsheet.js"></script>
+
+<section class="bottom">
+
+<center>
+<div class="video-container">
+    <video width="420" height="340" controls>
+        <source src="pictures/youtubevideo.mp4" type="video/mp4">
+    </video>
+</div>
+</center>
+
+<footer class="footer">
+
+    <!-- Top Footer -->
+    <div class="footer-content">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <h2>BOOKZZZ SPACE</h2>
+
+            <p>
+                Books and stories<br>
+                That makes you feel you.
+            </p>
+
+            <p class="listen">
+                Visit @bookzzzspace.channel
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20index.html">Home</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20products.html">Products</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20gallery.html">Gallery</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20about.html">About Us</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20contact.html">Contacts</a>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-column">
+            <h3>Stay In Touch</h3>
+
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Tiktok</a>
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+
+        <p>
+            Copyright © 2026 BOOKZZZ SPACE. All rights reserved.
+        </p>
+
+        <div class="footer-policy">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+
+    </div>
+
+</footer>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZzz Space | Contact Us</title>
+
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+
+<body>
+
+	<!-- NAVIGATION -->
+    <nav>
+        <div class="logo">BookZzz Space</div>
+
+        <div class="nav-links">
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20index.html" target="_blank">Home</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20products.html" target="_blank">Products</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20gallery.html" target="_blank">Gallery</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20about.html" target="_blank">About</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20contact.html" target="_blank">Contact</a>
+        </div>
+
+ <!-- MENU BUTTON -->
+        <div class="menu-container">
+
+            <button class="menu-button" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <div class="menu-dropdown" id="menuDropdown">
+
+                <a href="login.html">Log In</a>
+                <a href="signup.html">Create Account</a>
+                
+            </div>
+
+        </div>
+        
+    </nav>
+
+<section class="contact-section">
+
+    <!-- LEFT COLUMN -->
+    <div class="contact-form">
+
+        <h1 style="color: #8A7246;">Get in touch with us.</h1>
+        <p>Have a question or need help? We're here for you.</p>
+
+        <form id="contactForm">
+
+            <!-- NAME + EMAIL -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Your Name <span>*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+            </div>
+
+
+            <!-- SELECTION BOX -->
+            <div class="form-group full">
+                <label for="service">Select a Service</label>
+
+                <select id="service" name="service">
+                    <option value="">-- Select a service --</option>
+                    <option value="suggestions">Book Suggestions</option>
+                    <option value="support">Customer Support</option>
+                    <option value="order">Order Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </div>
+
+
+            <!-- RADIO BUTTONS -->
+            <div class="form-group">
+                <label>Preferred Contact Method</label>
+
+                <div class="radio-group">
+
+                    <label class="choice">
+                        <input type="radio" name="contact" value="email">
+                        Email
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="contact" value="phone">
+                        Phone
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="contact" value="message">
+                        Message
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- CHECKBOXES -->
+            <div class="form-group">
+                <label>What are you interested in?</label>
+
+                <div class="checkbox-group">
+
+                    <label class="choice">
+                        <input type="checkbox" name="help" value="fiction">
+                        Fiction
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="help" value="non-fiction">
+                        Non-Fiction
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="help" value="newreleases">
+                        New Releases
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- MESSAGE -->
+            <div class="form-group full">
+                <label for="message">Your Message <span>*</span></label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Enter Here"
+                    required></textarea>
+            </div>
+
+
+            <!-- BUTTONS -->
+            <div class="button-group">
+
+                <button type="submit" class="submit-btn">
+                    Submit Message
+                </button>
+
+                <button type="reset" class="reset-btn">
+                    Reset Message
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- RIGHT COLUMN -->
+    <div class="contact-card">
+
+        <div class="card-section">
+            <h2>Address</h2>
+            <p>📍Manila, Philippines</p>
+        </div>
+
+        <div class="card-section">
+            <h2>Contact</h2>
+            <p>📞Phone : +63 000 029 2001</p>
+            <p>📧Email : bookzzzspace@gmail.com</p>
+        </div>
+
+        <div class="card-section">
+            <h2>Follow</h2>
+
+            <div class="social-icons">
+                <a href="#">X</a>
+                <a href="#">◎</a>
+                <a href="#">T</a>
+                <a href="#">f</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <script src="javacontact.js"></script>
+
+<footer class="footer">
+
+    <!-- Top Footer -->
+    <div class="footer-content">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <h2>BOOKZZZ SPACE</h2>
+
+            <p>
+                Books and stories<br>
+                That makes you feel you.
+            </p>
+
+            <p class="listen">
+                Visit @bookzzzspace.channel
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20index.html">Home</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20products.html">Products</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20gallery.html">Gallery</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20about.html">About Us</a>
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/BUSINESS%20WEBSITE-CAMBAY%20contact.html">Contacts</a>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-column">
+            <h3>Stay In Touch</h3>
+
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Tiktok</a>
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+
+        <p>
+            Copyright © 2026 BOOKZZZ SPACE. All rights reserved.
+        </p>
+
+        <div class="footer-policy">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+
+    </div>
+
+</footer>
+</section>
+
+</body>
+</html>

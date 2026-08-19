@@ -1,0 +1,40 @@
+const cards = document.querySelectorAll(
+    ".main-card, .info-card"
+);
+
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+
+cards.forEach((card) => {
+
+    card.classList.add("hidden");
+
+    observer.observe(card);
+
+});
+
+function toggleMenu() {
+
+    const menu = document.getElementById("menuDropdown");
+
+    menu.classList.toggle("show");
+
+}

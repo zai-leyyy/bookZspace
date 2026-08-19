@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZzz Space - Login</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="login-card">
+
+        <!-- ICON -->
+        <div class="login-icon">
+            ↪
+        </div>
+
+        <!-- TITLE -->
+        <h1 id="form-title">Log in</h1>
+
+        <p class="subtitle" id="form-subtitle">
+            Welcome back! Please enter your details.
+        </p>
+
+
+        <!-- LOGIN FORM -->
+        <form id="login-form">
+
+            <div class="input-box">
+                <span>✉</span>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="password-box">
+            <span class="lock-icon">🔒</span>
+
+    <input 
+        type="password" 
+        id="password"
+        placeholder="Password"
+    >
+
+    <button 
+        type="button" 
+        class="eye-btn"
+        onclick="togglePassword()"
+    >
+        👁
+    </button>
+</div>
+            <div class="forgot">
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Log In
+            </button>
+
+        </form>
+
+        <!-- SWITCH -->
+        <p class="switch-text">
+            <span id="switch-question">Don't have an account?</span>
+
+            <a href="file:///F:/BUSINESS%20PROJECT-CAMBAY/Business%20Web%20Create%20Acc.html" id="switch-form">
+                Create Account
+            </a>
+        </p>
+
+
+        <!-- DIVIDER -->
+        <div class="divider">
+            <span>Or continue with</span>
+        </div>
+
+
+        <!-- SOCIAL LOGIN -->
+        <div class="social-buttons">
+
+            <button>G</button>
+            <button>f</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="logjava.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8ded5,
+            #d8d2c8,
+            #eee9e2
+        );
+}
+
+
+/* LOGIN CARD */
+
+.login-card {
+    width: 400px;
+
+    padding: 40px 45px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+
+/* ICON */
+
+.login-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border-radius: 15px;
+
+    font-size: 30px;
+
+    color: #5d5148;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* TITLE */
+
+.login-card h1 {
+    font-size: 28px;
+
+    color: #403a35;
+
+    margin-bottom: 8px;
+}
+
+
+/* SUBTITLE */
+
+.subtitle {
+    color: #716960;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+}
+
+
+/* INPUT */
+
+.input-box {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid #aaa39d;
+
+    color: #6c645d;
+}
+
+.input-box span {
+    width: 30px;
+
+    font-size: 16px;
+}
+
+.input-box input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    color: #403a35;
+}
+
+.input-box input::placeholder {
+    color: #827a73;
+}
+
+
+/* FORGOT PASSWORD */
+
+.forgot {
+    text-align: right;
+
+    margin: 5px 0 20px;
+}
+
+.forgot a {
+    color: #66594f;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+
+/* BUTTON */
+
+.submit-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #554c46;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #3f3934;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* SWITCH */
+
+.switch-text {
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #716960;
+}
+
+.switch-text a {
+    color: #403a35;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* DIVIDER */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 25px 0;
+
+    color: #827a73;
+
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #bbb4ae;
+}
+
+
+/* SOCIAL BUTTONS */
+
+.social-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+}
+
+.social-buttons button {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    color: #514941;
+
+    transition: 0.2s;
+}
+
+.social-buttons button:hover {
+    transform: scale(1.2);
+}
+
+
+/* HIDE FORM */
+
+.hidden {
+    display: none;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    border-bottom: 1px solid #aaa39d;
+
+    margin-bottom: 15px;
+}
+
+.lock-icon {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.password-box input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+}
+
+.password-box input::placeholder {
+    color: #827a73;
+}
+
+.eye-btn {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    padding: 5px;
+
+    color: #6c645d;
+}
